@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  text-align: center;
+  font-family: Inter;
+}
+
+.todo-form > * {
+  font-size: 1.5em;
+}
+
+.todo {
+  display: flex;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 5px;
+  font-size: 1.5em;
+}
+
+i {
+  > svg {
+    vertical-align: -5px;
+    font-size: 1em;
+
+    > :hover {
+      filter: none;
+    }
+  }
+
+  :hover {
+    filter: opacity(0.5);
+  }
+}
+
+textarea {
+  resize: horizontal;
+  height: 20pt;
+  font-family: Inter;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 40px;
+}
