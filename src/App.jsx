@@ -49,10 +49,10 @@ export default function App() {
   }, [todos]);
 
   return (
-    <div>
+    <main>
       <h1>Todo List</h1>
       <TodoForm onSubmit={addTodo} />
-      <ul className="list-group">
+      <ul>
         {todos.map((todo) => (
           <Todo
             key={todo.id}
@@ -63,6 +63,6 @@ export default function App() {
           />
         ))}
       </ul>
-    </div>
+    </main>
   );
 }

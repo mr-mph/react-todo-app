@@ -4,19 +4,41 @@
 html,
 body {
   text-align: center;
-  font-family: Inter;
+}
+
+main {
+  margin: 0 5vw;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 50px;
+  margin: 40px;
 }
 
 .todo-form > * {
-  font-size: 1.5em;
+  font-size: 1.2em;
+}
+
+ul {
+  padding: 0;
 }
 
 .todo {
   display: flex;
   border-radius: 5px;
-  margin: 10px;
-  padding: 5px;
+  padding: 10px;
   font-size: 1.5em;
+  background-color: #375063;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+
+  > i {
+    margin-right: 5px;
+  }
 }
 
 i {
@@ -30,17 +52,13 @@ i {
   }
 
   :hover {
-    filter: opacity(0.5);
+    filter: brightness(1.2);
   }
 }
 
 textarea {
   resize: horizontal;
   height: 20pt;
-  font-family: Inter;
-}
-
-h1 {
-  font-weight: 400;
-  font-size: 40px;
+  padding: 0;
+  margin: 0;
 }
