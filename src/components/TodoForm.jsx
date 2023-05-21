@@ -11,7 +11,7 @@ export default function TodoForm(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (input.trim().length === 0) return;
+    if (input.trim().length === 0) return; // don't allow empty todos
     props.onSubmit({
       id: uuidv4(),
       text: input,
